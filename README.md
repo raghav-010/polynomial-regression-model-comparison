@@ -1,6 +1,6 @@
-# polynomial-regression-model-comparison
+# Polynomial Regression Model Comparison
 
-Machine Learning project that demonstrates Polynomial Regression using the Scikit-Learn Pipeline. The project compares different polynomial degrees using Mean Squared Error (MSE) and R² Score to understand model complexity, underfitting, overfitting, and generalization.
+Machine Learning project demonstrating Polynomial Regression using a Scikit-Learn Pipeline. This project compares multiple polynomial degrees using Mean Squared Error (MSE) and R² Score to analyze model complexity, underfitting, overfitting, and generalization.
 
 ## Project Highlights
 
@@ -38,7 +38,7 @@ Machine Learning project that demonstrates Polynomial Regression using the Sciki
         Create Pipeline
                  │
                  ▼
-      Polynomial Features
+      PolynomialFeatures
                  │
                  ▼
        StandardScaler
@@ -47,7 +47,7 @@ Machine Learning project that demonstrates Polynomial Regression using the Sciki
       Linear Regression
                  │
                  ▼
-        Model Training (fit)
+       Model Training (fit)
                  │
                  ▼
       Model Prediction
@@ -65,24 +65,25 @@ Machine Learning project that demonstrates Polynomial Regression using the Sciki
 ## Model Comparison
 
 | Degree | Test MSE | Test R² | Observation |
-|---------|---------:|---------:|-------------|
+|:------:|---------:|---------:|-------------|
 | 1 | 2.2551 | 0.5252 | Underfitting |
 | 2 | 0.5571 | 0.8827 | Good Fit |
 | 5 | 0.5551 | 0.8831 | Best Model |
 | 10 | 0.7649 | 0.8389 | Beginning to Overfit |
 
-## What I Learned
+## Key Learnings
 
-- Creating a complete Machine Learning pipeline
-- Polynomial feature engineering
-- Feature scaling using StandardScaler
-- Training and evaluating regression models
-- Comparing multiple models
-- Understanding underfitting and overfitting
-- Selecting models based on generalization instead of training performance
+- Built a complete Machine Learning pipeline
+- Applied PolynomialFeatures to capture nonlinear relationships
+- Used StandardScaler for feature scaling
+- Trained and evaluated Linear Regression models
+- Compared multiple polynomial degrees
+- Understood underfitting, good fit, and overfitting
+- Selected the best model based on generalization rather than training performance
 
 ## Future Improvements
 
-- Perform Cross-Validation
+- Perform Cross-Validation for more reliable evaluation
 - Visualize fitted regression curves
 - Apply the workflow to real-world datasets
+- Experiment with additional regression algorithms
